@@ -1,0 +1,165 @@
+# --- Python ---
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+# Usually rebuilt anyway
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+marker_config_help.txt
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+*.sqlite3
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# --- Virtual Environments ---
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# --- IDEs / Editors ---
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+modules.xml
+*.ipr
+
+# --- Operating System Files ---
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# --- Data / Databases / Models ---
+# Local database directories (IMPORTANT FOR CHROMA)
+# Adjust 'databases/' if your ChromaDB path is different
+databases/
+recursive_retrieve/databases/
+*.db
+*.sqlite
+*.sqlite3
+
+# Downloaded models (if stored locally within the project)
+# Adjust if your model cache path is different
+models/
+model_cache/
+.cache/huggingface/ # More likely location, but gitignore usually doesn't track outside project
+*.bin # Common model file extension
+*.onnx
+*.safetensors
+
+# Large data files (add specific patterns if needed)
+*.csv
+*.jsonl
+*.parquet
+data/ # Be specific if some small data files SHOULD be tracked
+
+# --- Credentials & Sensitive Info ---
+# Environment variables file (VERY IMPORTANT)
+.env*
+!.env.example # Often keep an example file in git
+recursive_retrieve/.env*
+# Other potential credential files
+credentials.*
+secrets.*
+*.pem
+*.key
+config.json # If it contains secrets
+
+# --- Logs and Temporary Files ---
+*.log
+*.log.*
+logs/
+*.tmp
+*.swp
+*.swo
+
+# --- Jupyter Notebooks ---
+.ipynb_checkpoints
+recursive_retrieve/.ipynb_checkpoints/
+
+# Consider uncommenting the line below if your notebooks often have large outputs
+# you don't want to track. However, notebooks themselves are often tracked.
+# *.ipynb
+
+# --- LlamaIndex / LlamaParse Cache ---
+# If LlamaParse creates local cache directories within the project
+.llamaparse_cache/
+
+# --- Other ---
+# Add any other project-specific files or directories here
